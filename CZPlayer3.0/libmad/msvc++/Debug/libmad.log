@@ -1,0 +1,41 @@
+﻿生成启动时间为 2014/7/27 10:19:44。
+     1>项目“D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libmad\msvc++\libmad.vcxproj”在节点 3 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\libmad.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Debug\libmad.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\CL.exe /c /I. /ZI /nologo /W1 /WX- /Od /Oy- /D FPM_DEFAULT /D _LIB /D HAVE_CONFIG_H /D ASO_ZEROCHECK /D WIN32 /D _DEBUG /D DEBUG /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\bit.c ..\decoder.c ..\fixed.c ..\frame.c ..\huffman.c ..\layer12.c ..\layer3.c ..\stream.c ..\synth.c ..\timer.c ..\version.c
+         version.c
+         timer.c
+         synth.c
+         stream.c
+         layer3.c
+         layer12.c
+         huffman.c
+         frame.c
+         fixed.c
+         decoder.c
+         bit.c
+         正在生成代码...
+       Lib:
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\Lib.exe /OUT:"D:\visual studio 2010 Projects\CZPlayer3.0\\libmad.lib" /NOLOGO .\Debug/bit.obj
+         .\Debug/decoder.obj
+         .\Debug/fixed.obj
+         .\Debug/frame.obj
+         .\Debug/huffman.obj
+         .\Debug/layer12.obj
+         .\Debug/layer3.obj
+         .\Debug/stream.obj
+         .\Debug/synth.obj
+         .\Debug/timer.obj
+         .\Debug/version.obj
+         libmad.vcxproj -> D:\visual studio 2010 Projects\CZPlayer3.0\libmad.lib
+       FinalizeBuildStatus:
+         正在删除文件“Debug\libmad.unsuccessfulbuild”。
+         正在对“Debug\libmad.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libmad\msvc++\libmad.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.90

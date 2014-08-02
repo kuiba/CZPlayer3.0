@@ -1,0 +1,808 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97F9B7B8-97BC-4716-84CA-2C800CBD2E88}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(ConfigurationName)</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(ConfigurationName)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NO_WIN32_LEAN_AND_MEAN;QT_SQL_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_WEBKIT_LIB;QAXSERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\app\thirdParty\qxtglobalshortcut;.\app\thirdParty\qtsingleapplication;.\app\thirdParty\Qjson;.\app\thirdParty\qdeviceWatcher;.\app\thirdParty;.\app\thread;.\app\searchPanel;.\app\qt_zh_CN;.\app\qss;.\app\musicList;.\app\minWidget;.\app\mainWiget;.\app\lrcLabel;.\app\Entity;.\app\downloadWidget;.\app\DB;.\app\configPanel;.\app\aboutPanel;.\app\images;.\app\engine;.\app\core;.\app;.\libmad;.\libvorbis\vorbis;.\libvorbis;.\libogg\ogg;.\libogg;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;.\;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtWebKit;$(QTDIR)\include\ActiveQt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtSqld4.lib;QtNetworkd4.lib;QtXmld4.lib;QtWebKitd4.lib;QAxServerd.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_WEBKIT_LIB;QAXSERVER;_CRT_SECURE_NO_WARNINGS;NO_WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\app\thirdParty\qxtglobalshortcut;.\app\thirdParty\qtsingleapplication;.\app\thirdParty\Qjson;.\app\thirdParty\qdeviceWatcher;.\app\thirdParty;.\app\thread;.\app\searchPanel;.\app\qt_zh_CN;.\app\qss;.\app\musicList;.\app\minWidget;.\app\mainWiget;.\app\lrcLabel;.\app\Entity;.\app\downloadWidget;.\app\DB;.\app\configPanel;.\app\aboutPanel;.\app\images;.\app\engine;.\app\core;.\app;.\libmad;.\libvorbis\vorbis;.\libvorbis;.\libogg\ogg;.\libogg;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;.\;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtXml;$(QTDIR)\include\QtWebKit;$(QTDIR)\include\ActiveQt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;QtCore4.lib;QtGui4.lib;QtSql4.lib;QtNetwork4.lib;QtXml4.lib;QtWebKit4.lib;QAxServer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="app\aboutPanel\AboutPage.cpp" />
+    <ClCompile Include="app\aboutPanel\AboutPanel.cpp" />
+    <ClCompile Include="app\aboutPanel\AuthorPage.cpp" />
+    <ClCompile Include="app\aboutPanel\ThanksPage.cpp" />
+    <ClCompile Include="app\configPanel\configdialog.cpp" />
+    <ClCompile Include="app\configPanel\downloadsettingspage.cpp" />
+    <ClCompile Include="app\configPanel\generalsettingspage.cpp" />
+    <ClCompile Include="app\configPanel\hotkeyssettingspage.cpp" />
+    <ClCompile Include="app\configPanel\hotkeystablewidget.cpp" />
+    <ClCompile Include="app\configPanel\lrcdemo.cpp" />
+    <ClCompile Include="app\configPanel\lrcsettingspage.cpp" />
+    <ClCompile Include="app\configPanel\proxysettingspage.cpp" />
+    <ClCompile Include="app\configPanel\UpdatePage.cpp" />
+    <ClCompile Include="app\core\AutoStart.cpp" />
+    <ClCompile Include="app\core\ClientBaseOperating.cpp" />
+    <ClCompile Include="app\core\czplayerconfig.cpp" />
+    <ClCompile Include="app\core\FileRelation.cpp" />
+    <ClCompile Include="app\core\globalhotkey.cpp" />
+    <ClCompile Include="app\core\main.cpp" />
+    <ClCompile Include="app\core\nofocusdelegate.cpp" />
+    <ClCompile Include="app\core\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="app\DB\DBModule.cpp" />
+    <ClCompile Include="app\downloadWidget\downloadlist.cpp" />
+    <ClCompile Include="app\downloadWidget\musicdownload.cpp" />
+    <ClCompile Include="app\engine\AudioStream.cpp" />
+    <ClCompile Include="app\engine\BasicPlayer.cpp" />
+    <ClCompile Include="app\engine\FastFourierTransform.cpp" />
+    <ClCompile Include="app\engine\IO.cpp" />
+    <ClCompile Include="app\engine\SoundControl.cpp" />
+    <ClCompile Include="app\engine\spectrograph.cpp" />
+    <ClCompile Include="app\engine\Stream.cpp" />
+    <ClCompile Include="app\engine\Utils.cpp" />
+    <ClCompile Include="app\engine\WMWrapper.cpp" />
+    <ClCompile Include="app\Entity\Entity.cpp" />
+    <ClCompile Include="app\Entity\MusicInfoEntity.cpp" />
+    <ClCompile Include="app\Entity\MusicListSaveFormatEntity.cpp" />
+    <ClCompile Include="app\lrcLabel\musiclrc.cpp" />
+    <ClCompile Include="app\mainWiget\widget.cpp" />
+    <ClCompile Include="app\minWidget\minmusicwidget.cpp" />
+    <ClCompile Include="app\musicList\musiclist.cpp" />
+    <ClCompile Include="app\musicList\musiclistwidget.cpp" />
+    <ClCompile Include="app\musicList\SharedDialog.cpp" />
+    <ClCompile Include="app\searchPanel\SearchList.cpp" />
+    <ClCompile Include="app\searchPanel\SearchPanel.cpp" />
+    <ClCompile Include="app\thirdParty\qtsingleapplication\qtlocalpeer.cpp" />
+    <ClCompile Include="app\thirdParty\qtsingleapplication\qtsingleapplication.cpp" />
+    <ClCompile Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut.cpp" />
+    <ClCompile Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut_win.cpp" />
+    <ClCompile Include="app\thread\albumthread.cpp" />
+    <ClCompile Include="app\thread\downloadthread.cpp" />
+    <ClCompile Include="app\thread\HotplugWatcherThread.cpp" />
+    <ClCompile Include="app\thread\LoadMusicThread.cpp" />
+    <ClCompile Include="app\thread\lrcthread.cpp" />
+    <ClCompile Include="app\thread\SearchThread.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_AboutPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AboutPanel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_albumthread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AuthorPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ClientBaseOperating.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_configdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_czplayerconfig.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DBModule.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_downloadlist.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_downloadsettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_downloadthread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_generalsettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_globalhotkey.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hotkeyssettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hotkeystablewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HotplugWatcherThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoadMusicThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lrcdemo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lrcsettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lrcthread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_minmusicwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musicdownload.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musiclist.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musiclistwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musiclrc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nofocusdelegate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_proxysettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtlocalpeer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtsingleapplication.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qxtglobalshortcut.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SearchList.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SearchPanel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SearchThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SharedDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_spectrograph.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThanksPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UpdatePage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_myclass.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AboutPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AboutPanel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_albumthread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AuthorPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ClientBaseOperating.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_configdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_czplayerconfig.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DBModule.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_downloadlist.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_downloadsettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_downloadthread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_generalsettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_globalhotkey.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hotkeyssettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hotkeystablewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HotplugWatcherThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoadMusicThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lrcdemo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lrcsettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lrcthread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_minmusicwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musicdownload.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musiclist.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musiclistwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musiclrc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nofocusdelegate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_proxysettingspage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtlocalpeer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtsingleapplication.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qxtglobalshortcut.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SearchList.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SearchPanel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SearchThread.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SharedDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_spectrograph.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThanksPage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UpdatePage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="myclass.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\core\AutoStart.h" />
+    <ClInclude Include="app\core\defaultScheme.h" />
+    <ClInclude Include="app\core\FileRelation.h" />
+    <ClInclude Include="app\core\head.h" />
+    <ClInclude Include="app\core\static.h" />
+    <ClInclude Include="resource.h" />
+    <CustomBuild Include="app\core\nofocusdelegate.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing nofocusdelegate.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing nofocusdelegate.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\core\globalhotkey.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing globalhotkey.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing globalhotkey.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\core\czplayerconfig.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing czplayerconfig.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing czplayerconfig.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\core\ClientBaseOperating.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ClientBaseOperating.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ClientBaseOperating.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\engine\spectrograph.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing spectrograph.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing spectrograph.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="app\engine\SoundControl.h" />
+    <ClInclude Include="app\Entity\Entity.h" />
+    <ClInclude Include="app\Entity\MusicInfoEntity.h" />
+    <ClInclude Include="app\Entity\MusicListSaveFormatEntity.h" />
+    <ClInclude Include="app\thirdParty\qxtglobalshortcut\qxtglobal.h" />
+    <ClInclude Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut_p.h" />
+    <CustomBuild Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qxtglobalshortcut.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qxtglobalshortcut.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thirdParty\qtsingleapplication\qtsingleapplication.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qtsingleapplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qtsingleapplication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thirdParty\qtsingleapplication\qtlocalpeer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing qtlocalpeer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing qtlocalpeer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\searchPanel\SearchPanel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SearchPanel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SearchPanel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\searchPanel\SearchList.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SearchList.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SearchList.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\SearchThread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SearchThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SearchThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\lrcthread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing lrcthread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing lrcthread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\LoadMusicThread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing LoadMusicThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing LoadMusicThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\HotplugWatcherThread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing HotplugWatcherThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing HotplugWatcherThread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\downloadthread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing downloadthread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing downloadthread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\albumthread.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing albumthread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing albumthread.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\musicList\SharedDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SharedDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SharedDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\musicList\musiclistwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing musiclistwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing musiclistwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\musicList\musiclist.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing musiclist.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing musiclist.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\minWidget\minmusicwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing minmusicwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing minmusicwidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\mainWiget\widget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing widget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing widget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\lrcLabel\musiclrc.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing musiclrc.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing musiclrc.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\downloadWidget\musicdownload.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing musicdownload.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing musicdownload.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\downloadWidget\downloadlist.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing downloadlist.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing downloadlist.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\DB\DBModule.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing DBModule.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing DBModule.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\UpdatePage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing UpdatePage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing UpdatePage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\proxysettingspage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing proxysettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing proxysettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\lrcsettingspage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing lrcsettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing lrcsettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\lrcdemo.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing lrcdemo.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing lrcdemo.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\hotkeystablewidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing hotkeystablewidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing hotkeystablewidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\hotkeyssettingspage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing hotkeyssettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing hotkeyssettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\generalsettingspage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing generalsettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing generalsettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\downloadsettingspage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing downloadsettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing downloadsettingspage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\configdialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing configdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing configdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\ThanksPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ThanksPage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ThanksPage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\AuthorPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AuthorPage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AuthorPage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\AboutPanel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AboutPanel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AboutPanel.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\AboutPage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AboutPage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -D_DEBUG -D_WINDOWS -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AboutPage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_WEBKIT_LIB -DQAXSERVER -D_CRT_SECURE_NO_WARNINGS -DNO_WIN32_LEAN_AND_MEAN -D_UNICODE  "-I." "-I.\app\thirdParty\qxtglobalshortcut" "-I.\app\thirdParty\qtsingleapplication" "-I.\app\thirdParty\Qjson" "-I.\app\thirdParty\qdeviceWatcher" "-I.\app\thirdParty" "-I.\app\thread" "-I.\app\searchPanel" "-I.\app\qt_zh_CN" "-I.\app\qss" "-I.\app\musicList" "-I.\app\minWidget" "-I.\app\mainWiget" "-I.\app\lrcLabel" "-I.\app\Entity" "-I.\app\downloadWidget" "-I.\app\DB" "-I.\app\configPanel" "-I.\app\aboutPanel" "-I.\app\images" "-I.\app\engine" "-I.\app\core" "-I.\app" "-I.\libmad" "-I.\libvorbis\vorbis" "-I.\libvorbis" "-I.\libogg\ogg" "-I.\libogg" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I." "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtXml" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\ActiveQt" "-I." "-I." "-I." "-I." "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="app\core\signal_slot.h" />
+    <ClInclude Include="app\core\stdafx.h" />
+    <ClInclude Include="app\core\targetver.h" />
+    <ClInclude Include="app\engine\AudioStream.h" />
+    <ClInclude Include="app\engine\BasicPlayer.h" />
+    <ClInclude Include="app\engine\CriticalSection.h" />
+    <ClInclude Include="app\engine\FastFourierTransform.h" />
+    <ClInclude Include="app\engine\IO.h" />
+    <ClInclude Include="app\engine\Stream.h" />
+    <ClInclude Include="app\engine\Thread.h" />
+    <ClInclude Include="app\engine\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app\qss\musicPlayer.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CZPlayer3.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_Win32="4.8.0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

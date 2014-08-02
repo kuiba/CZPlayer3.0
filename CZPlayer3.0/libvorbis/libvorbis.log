@@ -1,0 +1,418 @@
+﻿生成启动时间为 2014/7/28 22:03:57。
+     1>项目“D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libvorbis\libvorbis.vcxproj”在节点 3 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“./libvorbis.lastbuildstate”。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目录未以斜杠结尾。此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+       InitializeBuildStatus:
+         正在创建“./libvorbis.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\CL.exe /c /I. /I..\libogg /I.\libogg\ogg /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBVORBIS_EXPORTS /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"./" /Fd"./vc100.pdb" /Gd /TC /analyze- /errorReport:prompt analysis.c bitrate.c block.c codebook.c envelope.c floor0.c floor1.c info.c lookup.c lpc.c lsp.c mapping0.c mdct.c psy.c registry.c res0.c sharedbook.c smallft.c synthesis.c vorbisenc.c vorbisfile.c window.c
+         window.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+         vorbisfile.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(53): warning C4244: “函数”: 从“ogg_int64_t”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(57): warning C4232: 使用了非标准扩展:“read_func”: dllimport“fread”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(245) : 参见“fread”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(59): warning C4232: 使用了非标准扩展:“close_func”: dllimport“fclose”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(199) : 参见“fclose”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(61): warning C4232: 使用了非标准扩展:“tell_func”: dllimport“ftell”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(264) : 参见“ftell”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(64): warning C4232: 使用了非标准扩展:“read_func”: dllimport“fread”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(245) : 参见“fread”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(68): warning C4232: 使用了非标准扩展:“tell_func”: dllimport“ftell”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(264) : 参见“ftell”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(71): warning C4232: 使用了非标准扩展:“read_func”: dllimport“fread”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(245) : 参见“fread”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(73): warning C4232: 使用了非标准扩展:“close_func”: dllimport“fclose”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(199) : 参见“fclose”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbis\vorbisfile.h(78): warning C4232: 使用了非标准扩展:“read_func”: dllimport“fread”的地址是非静态，不保证标识
+                 f:\microsoft visual studio 10.0\vs2010\vc\include\stdio.h(245) : 参见“fread”的声明
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(107): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(213): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(216): warning C4244: “return”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(259): warning C4244: “return”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(276): warning C4244: “return”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(278): warning C4244: “return”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(287): warning C4244: “return”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(317): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(458): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(508): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(569): warning C4244: “return”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(612): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(617): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(691): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(800): warning C4244: “函数”: 从“ogg_int64_t”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1017): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1018): warning C4244: “return”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1022): warning C4244: “return”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1050): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1181): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1415): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1426): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1480): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1553): warning C4244: “=”: 从“ogg_int64_t”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1589): warning C4244: “初始化”: 从“double”转换到“ogg_int64_t”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1619): warning C4244: “初始化”: 从“double”转换到“ogg_int64_t”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1750): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1790): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1807): warning C4244: “=”: 从“int”转换到“short”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1823): warning C4244: “=”: 从“int”转换到“short”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1839): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1854): warning C4244: “=”: 从“int”转换到“char”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1890): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1939): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1956): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1972): warning C4127: 条件表达式是常量
+         vorbisenc.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(27): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(27): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(27): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(27): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(27): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(33): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(39): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(39): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(39): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(39): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(39): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(45): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(45): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(45): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(45): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(45): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(51): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(51): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(51): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(51): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\modes\psych_44.h(51): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(203): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(242): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(259): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(260): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(262): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(269): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(270): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(282): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(283): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(284): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(285): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(287): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(288): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(289): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(293): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(295): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(296): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(297): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(300): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(302): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(303): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(323): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(350): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(357): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(358): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(359): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(360): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(361): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(363): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(366): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(373): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(388): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(394): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(399): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(409): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(414): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(421): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(428): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(440): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(441): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(458): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(552): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(582): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(611): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(651): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(652): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(653): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(830): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(836): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(838): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(869): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(909): warning C4305: “+=”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(910): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(954): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(956): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(979): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(1063): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(1079): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisenc.c(1082): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+         synthesis.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+         smallft.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\smallft.c(99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\smallft.c(100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\smallft.c(283): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\smallft.c(284): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\smallft.c(853): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\smallft.c(854): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         sharedbook.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(55): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(56): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(67): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(151): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(158): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(209): warning C4244: “初始化”: 从“long”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(210): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(229): warning C4244: “初始化”: 从“long”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(230): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\sharedbook.c(380): warning C4244: “=”: 从“long”转换到“char”，可能丢失数据
+         res0.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(266): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(349): warning C4100: “acc”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(384): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(401): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(402): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(375): warning C4189: “ci”: 局部变量已初始化但不引用
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(464): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(466): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\res0.c(503): warning C4189: “vd”: 局部变量已初始化但不引用
+         registry.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+         psy.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(137): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(139): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(173): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(174): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(175): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(192): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(193): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(217): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(218): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(239): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(254): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(259): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(274): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(276): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(277): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(290): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(291): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(296): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(301): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(308): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(321): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(323): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(332): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(344): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(398): warning C4244: “=”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(400): warning C4244: “=”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(459): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(567): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(821): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(883): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(889): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(896): warning C4305: “=”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(900): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(940): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(946): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(946): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(946): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(946): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(947): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(947): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(947): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(947): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(948): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(948): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(948): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(948): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(949): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(949): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(949): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(949): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(950): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(950): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(950): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(950): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(951): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(951): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(951): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(951): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(952): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(952): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(952): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(952): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(953): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(953): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(953): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(953): warning C4305: “初始化”: 从“double”到“float”截断
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(977): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(978): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(979): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(981): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(982): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(983): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(987): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(988): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(989): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(991): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(992): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(993): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1022): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1023): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1082): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1095): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1113): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1154): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1155): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1165): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1218): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1225): warning C4244: “*=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\psy.c(1220): warning C4189: “start”: 局部变量已初始化但不引用
+         mdct.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(58): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(66): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(67): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(68): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(69): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(72): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mdct.c(73): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         mapping0.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(277): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(317): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(334): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(390): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(738): warning C4189: “hs”: 局部变量已初始化但不引用
+         lsp.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lookup.c(31): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lookup.c(38): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lsp.c(101): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lsp.c(319): warning C4127: 条件表达式是常量
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lsp.c(351): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lsp.c(398): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lsp.c(450): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lsp.c(453): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         lpc.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\lpc.c(114): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+         lookup.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+         info.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\info.c(54): warning C4244: “=”: 从“long”转换到“char”，可能丢失数据
+         floor1.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(196): warning C4100: “vd”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(288): warning C4244: “初始化”: 从“const float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(459): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(420): warning C4189: “quantized”: 局部变量已初始化但不引用
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(513): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(514): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor1.c(770): warning C4189: “n”: 局部变量已初始化但不引用
+         floor0.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor0.c(124): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor0.c(135): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\floor0.c(144): warning C4100: “vd”: 未引用的形参
+         envelope.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\envelope.c(48): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\envelope.c(65): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\envelope.c(68): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\envelope.c(128): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\envelope.c(146): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\envelope.c(95): warning C4100: “pos”: 未引用的形参
+         codebook.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+         block.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\block.c(845): warning C4244: “-=”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\block.c(848): warning C4244: “+=”: 从“ogg_int64_t”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\block.c(861): warning C4244: “初始化”: 从“ogg_int64_t”转换到“long”，可能丢失数据
+         正在生成代码...
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(694): warning C4701: 使用了可能未初始化的局部变量“mag_memo”
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\mapping0.c(694): warning C4701: 使用了可能未初始化的局部变量“mag_sort”
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(338): warning C4706: 条件表达式内的赋值
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(353): warning C4706: 条件表达式内的赋值
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(474): warning C4706: 条件表达式内的赋值
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\vorbisfile.c(1475): warning C4706: 条件表达式内的赋值
+         正在编译...
+         bitrate.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(42): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(43): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(44): warning C4244: “=”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(51): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(83): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(88): warning C4244: “初始化”: 从“double”转换到“long”，可能丢失数据
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\bitrate.c(135): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+         analysis.c
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(133): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\os.h(136): warning C4100: “fpu”: 未引用的形参
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\analysis.c(82): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+         正在生成代码...
+     1>d:\visual studio 2010 projects\czplayer3.0\czplayer3.0\libvorbis\analysis.c(49): warning C4706: 条件表达式内的赋值
+       Lib:
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\Lib.exe /OUT:"../decodinglib\\libvorbis.lib" /NOLOGO ./analysis.obj
+         ./bitrate.obj
+         ./block.obj
+         ./codebook.obj
+         ./envelope.obj
+         ./floor0.obj
+         ./floor1.obj
+         ./info.obj
+         ./lookup.obj
+         ./lpc.obj
+         ./lsp.obj
+         ./mapping0.obj
+         ./mdct.obj
+         ./psy.obj
+         ./registry.obj
+         ./res0.obj
+         ./sharedbook.obj
+         ./smallft.obj
+         ./synthesis.obj
+         ./vorbisenc.obj
+         ./vorbisfile.obj
+         ./window.obj
+     1>lookup.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+         libvorbis.vcxproj -> D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libvorbis\../decodinglib\libvorbis.lib
+       FinalizeBuildStatus:
+         正在删除文件“./libvorbis.unsuccessfulbuild”。
+         正在对“./libvorbis.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libvorbis\libvorbis.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.60

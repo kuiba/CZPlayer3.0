@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{54743d17-3211-4953-8a80-d7674271de40}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{26a4eab5-adde-48b3-a7af-b7a8784caf08}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{12e72d7e-c120-4ddb-915d-9ca35f0bcd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{d50038b0-1092-4314-b3e5-058f3d6fb33f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aboutPanel">
+      <UniqueIdentifier>{05b205c7-cdc3-45e6-a8ea-595717ade7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configPanel">
+      <UniqueIdentifier>{e444df54-3593-4dce-95e4-4b564fad1fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{98ed91c0-3f5c-4775-b425-d73069479dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="downloadWidget">
+      <UniqueIdentifier>{83ff8b13-0827-4eac-8bc2-be84928f4f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{5f341e8f-6c81-4571-9ce9-672214dd091f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lrcLabel">
+      <UniqueIdentifier>{ebc5e174-c2d2-4d02-ae9e-1e68d54a0ce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainWiget">
+      <UniqueIdentifier>{3a82336d-2c92-424b-ad09-353252eb4703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="minWidget">
+      <UniqueIdentifier>{91f3685f-ca53-4e3b-ae27-8ecf979a1891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="musicList">
+      <UniqueIdentifier>{1e3b593f-1569-4602-aad5-93af98b01e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="searchPanel">
+      <UniqueIdentifier>{4ee4fad7-bd4d-4344-8388-d0f7c2d4d952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdParty">
+      <UniqueIdentifier>{07334786-7dd4-4797-9d26-8f5d82677b29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{da418129-5805-43c3-b7fb-e8e51d4f0cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdParty\qtsingleapplication">
+      <UniqueIdentifier>{41681927-a57b-4dfa-9780-087c4ca521ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdParty\qxtglobalshortcut">
+      <UniqueIdentifier>{2439ef51-6d4a-4946-ab92-c0e8ec0800e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\qrc_myclass.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\main.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\AudioStream.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\BasicPlayer.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\FastFourierTransform.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\IO.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\Stream.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\Utils.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\WMWrapper.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\stdafx.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="app\aboutPanel\AboutPage.cpp">
+      <Filter>aboutPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AboutPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AboutPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\aboutPanel\AboutPanel.cpp">
+      <Filter>aboutPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AboutPanel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AboutPanel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\aboutPanel\AuthorPage.cpp">
+      <Filter>aboutPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AuthorPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AuthorPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\aboutPanel\ThanksPage.cpp">
+      <Filter>aboutPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ThanksPage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ThanksPage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\configdialog.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_configdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_configdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\downloadsettingspage.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_downloadsettingspage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_downloadsettingspage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\generalsettingspage.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_generalsettingspage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_generalsettingspage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\hotkeyssettingspage.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hotkeyssettingspage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hotkeyssettingspage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\hotkeystablewidget.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hotkeystablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hotkeystablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\lrcdemo.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lrcdemo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lrcdemo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\lrcsettingspage.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lrcsettingspage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lrcsettingspage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\proxysettingspage.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_proxysettingspage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_proxysettingspage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\configPanel\UpdatePage.cpp">
+      <Filter>configPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UpdatePage.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UpdatePage.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\DB\DBModule.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DBModule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DBModule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\downloadWidget\downloadlist.cpp">
+      <Filter>downloadWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_downloadlist.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_downloadlist.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\downloadWidget\musicdownload.cpp">
+      <Filter>downloadWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musicdownload.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musicdownload.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\Entity\Entity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="app\Entity\MusicInfoEntity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="app\Entity\MusicListSaveFormatEntity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="app\lrcLabel\musiclrc.cpp">
+      <Filter>lrcLabel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musiclrc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musiclrc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\mainWiget\widget.cpp">
+      <Filter>mainWiget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\minWidget\minmusicwidget.cpp">
+      <Filter>minWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_minmusicwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_minmusicwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\musicList\musiclist.cpp">
+      <Filter>musicList</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musiclist.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musiclist.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\musicList\musiclistwidget.cpp">
+      <Filter>musicList</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_musiclistwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_musiclistwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\musicList\SharedDialog.cpp">
+      <Filter>musicList</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SharedDialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SharedDialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thread\albumthread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_albumthread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_albumthread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thread\downloadthread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_downloadthread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_downloadthread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thread\HotplugWatcherThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_HotplugWatcherThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_HotplugWatcherThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thread\LoadMusicThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LoadMusicThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LoadMusicThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thread\lrcthread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lrcthread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lrcthread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thread\SearchThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SearchThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SearchThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\searchPanel\SearchList.cpp">
+      <Filter>searchPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SearchList.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SearchList.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\searchPanel\SearchPanel.cpp">
+      <Filter>searchPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SearchPanel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SearchPanel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thirdParty\qtsingleapplication\qtlocalpeer.cpp">
+      <Filter>thirdParty\qtsingleapplication</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtlocalpeer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtlocalpeer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thirdParty\qtsingleapplication\qtsingleapplication.cpp">
+      <Filter>thirdParty\qtsingleapplication</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qtsingleapplication.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qtsingleapplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut.cpp">
+      <Filter>thirdParty\qxtglobalshortcut</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qxtglobalshortcut.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qxtglobalshortcut.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut_win.cpp">
+      <Filter>thirdParty\qxtglobalshortcut</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\spectrograph.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_spectrograph.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_spectrograph.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\AutoStart.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\ClientBaseOperating.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ClientBaseOperating.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ClientBaseOperating.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\czplayerconfig.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_czplayerconfig.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_czplayerconfig.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\FileRelation.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\globalhotkey.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_globalhotkey.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_globalhotkey.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\core\nofocusdelegate.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nofocusdelegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nofocusdelegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="app\engine\SoundControl.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="myclass.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\AboutPage.h">
+      <Filter>aboutPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\AboutPanel.h">
+      <Filter>aboutPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\AuthorPage.h">
+      <Filter>aboutPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\aboutPanel\ThanksPage.h">
+      <Filter>aboutPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\configdialog.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\downloadsettingspage.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\generalsettingspage.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\hotkeyssettingspage.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\hotkeystablewidget.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\lrcdemo.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\lrcsettingspage.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\proxysettingspage.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\configPanel\UpdatePage.h">
+      <Filter>configPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\DB\DBModule.h">
+      <Filter>DB</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\downloadWidget\downloadlist.h">
+      <Filter>downloadWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\downloadWidget\musicdownload.h">
+      <Filter>downloadWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\lrcLabel\musiclrc.h">
+      <Filter>lrcLabel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\mainWiget\widget.h">
+      <Filter>mainWiget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\minWidget\minmusicwidget.h">
+      <Filter>minWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\musicList\musiclist.h">
+      <Filter>musicList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\musicList\musiclistwidget.h">
+      <Filter>musicList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\musicList\SharedDialog.h">
+      <Filter>musicList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\albumthread.h">
+      <Filter>thread</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\downloadthread.h">
+      <Filter>thread</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\HotplugWatcherThread.h">
+      <Filter>thread</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\LoadMusicThread.h">
+      <Filter>thread</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\lrcthread.h">
+      <Filter>thread</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thread\SearchThread.h">
+      <Filter>thread</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\searchPanel\SearchList.h">
+      <Filter>searchPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\searchPanel\SearchPanel.h">
+      <Filter>searchPanel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thirdParty\qtsingleapplication\qtlocalpeer.h">
+      <Filter>thirdParty\qtsingleapplication</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thirdParty\qtsingleapplication\qtsingleapplication.h">
+      <Filter>thirdParty\qtsingleapplication</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut.h">
+      <Filter>thirdParty\qxtglobalshortcut</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\engine\spectrograph.h">
+      <Filter>engine</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\core\ClientBaseOperating.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\core\czplayerconfig.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\core\globalhotkey.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="app\core\nofocusdelegate.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\engine\AudioStream.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\BasicPlayer.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\CriticalSection.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\FastFourierTransform.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\IO.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\Stream.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\Thread.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\Utils.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\stdafx.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\targetver.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\signal_slot.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\Entity\Entity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="app\Entity\MusicInfoEntity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="app\Entity\MusicListSaveFormatEntity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="app\thirdParty\qxtglobalshortcut\qxtglobal.h">
+      <Filter>thirdParty\qxtglobalshortcut</Filter>
+    </ClInclude>
+    <ClInclude Include="app\thirdParty\qxtglobalshortcut\qxtglobalshortcut_p.h">
+      <Filter>thirdParty\qxtglobalshortcut</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\AutoStart.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\defaultScheme.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\FileRelation.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\head.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\core\static.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="app\engine\SoundControl.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app\qss\musicPlayer.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CZPlayer3.rc" />
+  </ItemGroup>
+</Project>
