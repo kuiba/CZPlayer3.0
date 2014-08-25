@@ -193,5 +193,8 @@
         <file>app/images/ziRanGreen.png</file>
         <file>app/qss/musicPlayer.qss</file>
         <file>app/qt_zh_CN/qt_zh_CN.qm</file>
+        <file>app/images/CZPlayer2.png</file>
+        <file>app/images/equalizerBand.png</file>
+        <file>app/images/equalizerBg.png</file>
     </qresource>
 </RCC>

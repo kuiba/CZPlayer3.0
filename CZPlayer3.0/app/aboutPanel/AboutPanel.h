@@ -5,6 +5,7 @@
 #include "AuthorPage.h"
 #include "ThanksPage.h"
 
+//πÿ”⁄√Ê∞Â
 class AboutPanel : public QDialog
 {
 	Q_OBJECT

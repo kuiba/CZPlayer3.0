@@ -5,6 +5,7 @@
 #include <QtGui>
 #include "lrcdemo.h"
 
+//∏Ë¥ …Ë÷√“≥√Ê
 class LrcSettingsPage : public QWidget
 {
     Q_OBJECT

@@ -238,6 +238,11 @@ public:
 	void Play();																		//恢复播放
 	jlong GetLongFramePosition();														//获取帧位置
 
+	void setCurrentPosition(DWORD dwPlayCursor)											//设置播放位置
+	{
+		m_info->playBuffer->SetCurrentPosition(dwPlayCursor);
+	}
+
 c_signals:
 	Signal1<vector<float>> sig_spectrumChanged;
 	Signal sig_Finished;

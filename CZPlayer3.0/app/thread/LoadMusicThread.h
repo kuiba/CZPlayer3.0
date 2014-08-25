@@ -3,6 +3,7 @@
 #include "head.h"
 #include "MusicInfoEntity.h"
 
+//¼ÓÔØ¸èÇúÏß³Ì
 class LoadMusicThread : public QThread
 {
 	Q_OBJECT

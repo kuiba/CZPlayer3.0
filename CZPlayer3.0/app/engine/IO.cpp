@@ -1762,7 +1762,9 @@ void CMp3Input::GetDataInternal(void** buffer, DWORD* bytes)
 		count = m_synth.pcm.length - m_samplecount;
 
 		if (count > nsamples)
+		{
 			count = nsamples;
+		}
 
 		if (count)
 		{
@@ -1771,9 +1773,13 @@ void CMp3Input::GetDataInternal(void** buffer, DWORD* bytes)
 			ch2 = m_synth.pcm.samples[1] + m_samplecount;
 
 			if (m_Channels != 2)
+			{
 				ch2 = 0;
+			}
 			else if (m_synth.pcm.channels == 1)
+			{
 				ch2 = ch1;
+			}
 
 			pack_pcm(&samples, count, ch1, ch2);
 
@@ -1781,7 +1787,9 @@ void CMp3Input::GetDataInternal(void** buffer, DWORD* bytes)
 			nsamples -= count;
 
 			if (nsamples == 0)
+			{
 				break;
+			}
 		}
 
 		while (mad_frame_decode(&m_frame, &m_stream) == -1)
@@ -1789,7 +1797,9 @@ void CMp3Input::GetDataInternal(void** buffer, DWORD* bytes)
 			// DWORD bytes;
 			unsigned int bytes;
 			if (MAD_RECOVERABLE(m_stream.error))
+			{
 				continue;
+			}
 
 			if (m_stream.next_frame)
 			{
@@ -1797,7 +1807,9 @@ void CMp3Input::GetDataInternal(void** buffer, DWORD* bytes)
 			}
 
 			if ((bytes = m_pStream->Read(m_buffer + m_buflen, sizeof(m_buffer) - m_buflen)) == 0)
+			{
 				return;
+			}
 
 			mad_stream_buffer(&m_stream, m_buffer, m_buflen += bytes);
 		}
@@ -1818,7 +1830,9 @@ void CMp3Input::GetDataInternal(void** buffer, DWORD* bytes)
 bool CMp3Input::SeekInternal(LARGE_INTEGER* SampleNum)
 {
 	if(SampleNum->QuadPart > m_size)
+	{
 		return false;
+	}
 
 	double fraction = SampleNum->QuadPart / m_size;
 	unsigned long position = (unsigned long)
@@ -1838,7 +1852,9 @@ bool CMp3Input::SeekInternal(LARGE_INTEGER* SampleNum)
 	m_pStream->Seek((LONG)(m_size * fraction), FILE_BEGIN);
 
 	if ((m_buflen = m_pStream->Read(m_buffer, sizeof(m_buffer))) == 0)
+	{
 		m_buflen = 0;
+	}
 
 	mad_stream_buffer(&m_stream, m_buffer, m_buflen);
 	mad_frame_mute(&m_frame);
@@ -1852,12 +1868,15 @@ bool CMp3Input::SeekInternal(LARGE_INTEGER* SampleNum)
 			if (mad_frame_decode(&m_frame, &m_stream) == 0)
 			{
 				mad_timer_add(&m_timer, m_frame.header.duration);
-
 				if (--skip == 0)
+				{
 					mad_synth_frame(&m_synth, &m_frame);
+				}
 			}
 			else if (!MAD_RECOVERABLE(m_stream.error))
+			{
 				break;
+			}
 
 		} while (skip);
 	}
@@ -1922,7 +1941,7 @@ void CMp3Input::OpenFile()
 		m_pStream->Seek(iStreamStart, FILE_BEGIN);
 		scan_header(m_pStream, &m_frame.header, &m_xing);	//读取mp3头信息
 
-		m_vbr = m_xing.flags ? true : false;
+		m_vbr = m_xing.flags ? true : false;				//判断是否为常量位速率
 		m_pStream->Seek(iStreamStart, FILE_BEGIN);
 
 		m_synth.pcm.length = 0;
@@ -1967,7 +1986,9 @@ void CMp3Input::CloseFile()
 			m_pStream = NULL;
 		}
 		else if (m_Seekable)
+		{
 			m_pStream->Seek(0, FILE_BEGIN);
+		}
 
 		mad_synth_finish(&m_synth);
 		mad_frame_finish(&m_frame);
@@ -1982,7 +2003,9 @@ void CMp3Input::CloseFile()
 int parse_xing(struct xing *xing, struct mad_bitptr ptr, unsigned int bitlen)
 {
 	if (bitlen < 64 || mad_bit_read(&ptr, 32) != XING_MAGIC)
+	{
 		goto fail;
+	}
 
 	xing->flags = mad_bit_read(&ptr, 32);
 	bitlen -= 64;
@@ -1990,7 +2013,9 @@ int parse_xing(struct xing *xing, struct mad_bitptr ptr, unsigned int bitlen)
 	if (xing->flags & XING_FRAMES)
 	{
 		if (bitlen < 32)
+		{
 			goto fail;
+		}
 
 		xing->frames = mad_bit_read(&ptr, 32);
 		bitlen -= 32;
@@ -1999,7 +2024,9 @@ int parse_xing(struct xing *xing, struct mad_bitptr ptr, unsigned int bitlen)
 	if (xing->flags & XING_BYTES)
 	{
 		if (bitlen < 32)
+		{
 			goto fail;
+		}
 
 		xing->bytes = mad_bit_read(&ptr, 32);
 		bitlen -= 32;
@@ -2010,18 +2037,23 @@ int parse_xing(struct xing *xing, struct mad_bitptr ptr, unsigned int bitlen)
 		int i;
 
 		if (bitlen < 800)
+		{
 			goto fail;
+		}
 
 		for (i = 0; i < 100; ++i)
+		{
 			xing->toc[i] = (unsigned char) mad_bit_read(&ptr, 8);
-
+		}
 		bitlen -= 800;
 	}
 
 	if (xing->flags & XING_SCALE)
 	{
 		if (bitlen < 32)
+		{
 			goto fail;
+		}
 
 		xing->scale = mad_bit_read(&ptr, 32);
 		bitlen -= 32;
@@ -2050,7 +2082,9 @@ int scan_header(CStream* pInStream, struct mad_header *header, struct xing *xing
 	mad_frame_init(&frame);
 
 	if (xing)
+	{
 		xing->flags = 0;
+	}
 
 	while (1)
 	{
@@ -2066,24 +2100,35 @@ int scan_header(CStream* pInStream, struct mad_header *header, struct xing *xing
 			buflen += bytes;
 		}
 
-		mad_stream_buffer(&stream, buffer, buflen);
+		mad_stream_buffer(&stream, buffer, buflen);	//stream和buffer关联起来
 
 		while (1)
 		{
+			/*
+			如果mad_frame_decode返回-1，这说明这里存在错误这需要对特定的错误进行处理
+			当错误代码为!MAD_RECOVERABLE(stream.error)，则需要从新更新流媒体buffer
+			当错误代码为MAD_ERROR_BADDATAPTR时需要再进行decode
+			当错误代码为MAD_ERROR_LOSTSYNC则需要进行id3tag跳帧，并再次decode
+			*/
 			if (mad_frame_decode(&frame, &stream) == -1)
 			{
 				if (!MAD_RECOVERABLE(stream.error))
+				{
 					break;
-
+				}
 				continue;
 			}
 
 			if (count++ || (xing && parse_xing(xing, stream.anc_ptr, stream.anc_bitlen) == 0))
+			{
 				break;
+			}
 		}
 
 		if (count || stream.error != MAD_ERROR_BUFLEN)
+		{
 			break;
+		}
 
 		memmove(buffer, stream.next_frame,
 			buflen = &buffer[buflen] - stream.next_frame);
@@ -2092,11 +2137,14 @@ int scan_header(CStream* pInStream, struct mad_header *header, struct xing *xing
 	if (count)
 	{
 		if (header)
+		{
 			*header = frame.header;
+		}
 	}
-
 	else
+	{
 		result = -1;
+	}
 
 	mad_frame_finish(&frame);
 	mad_stream_finish(&stream);
@@ -2282,7 +2330,9 @@ void CVorbisInput::OpenFile()
 	if(m_Opened == 0)
 	{
 		if(!m_StreamAssigned)
+		{
 			m_pStream = new CFileStream(m_FileName, FILE_OPEN);
+		}
 
 		gVorbisIn = this;
 		m_Size.QuadPart = m_pStream->GetSize();

@@ -4,6 +4,7 @@
 #include "ClientBaseOperating.h"
 #include "DBModule.h"
 #include "SoundControl.h"
+#include "eq.h"
 
 //得到音乐播放时间，目前仅支持mp3、wma、wav格式
 static unsigned long getMusicTime(WCHAR *szPath)
@@ -123,7 +124,6 @@ Widget::Widget(char *argvMusicPath)
 	DBModule::initDB();							//初始化数据库
 	ClientBaseOperating::initConfig();			//初始化配置
 
-	//m_engine = new Engine(this);				//播放引擎
 	this->createUI();							//创建界面
 	this->connectUI();							//信号与槽
 	m_state = NoState;							//设定一个状态
@@ -132,6 +132,7 @@ Widget::Widget(char *argvMusicPath)
 //析构函数
 Widget::~Widget()
 {
+	this->reset();
 	if (searchPanel) { delete searchPanel; searchPanel = 0; }
 	if (playList) { delete playList; playList = 0; }
 	if (musicListWidget) { delete musicListWidget; musicListWidget = 0; }
@@ -386,6 +387,8 @@ void Widget::createUI()
 	//播放列表
 	playList = new MusicList(this);
 	musicListWidget = new MusicListWidget(playList, &m_mapMusicRows, this);
+	//均衡器
+	//equalizerWidget = new EqualizerWidget(this);
 	//歌词
 	lrc = new MusicLrc();
 	//搜索面板
@@ -451,7 +454,6 @@ void Widget::connectUI()
 {
 	//注册类型
 	qRegisterMetaType<vector<float>>("vector<float>");
-	qRegisterMetaType<vector<int>>("vector<int>");
 
 	connect(openFileButton, SIGNAL(clicked()), this, SLOT(slot_OpenFile()));									//打开音乐文件
 	connect(musicListButton, SIGNAL(clicked()), this, SLOT(slot_OpenMusicList()));								//打开音乐列表界面

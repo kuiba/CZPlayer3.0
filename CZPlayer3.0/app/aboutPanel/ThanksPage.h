@@ -2,6 +2,7 @@
 
 #include "head.h"
 
+//¸ÐÐ»Ò³Ãæ
 class ThanksPage: public QWidget
 {
 	Q_OBJECT

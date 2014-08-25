@@ -2,6 +2,7 @@
 
 #include "head.h"
 
+//¹ØÓÚÒ³Ãæ
 class AboutPage : public QWidget
 {
 	Q_OBJECT

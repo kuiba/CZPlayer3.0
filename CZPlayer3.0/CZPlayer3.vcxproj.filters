@@ -69,6 +69,12 @@
     <Filter Include="thirdParty\qxtglobalshortcut">
       <UniqueIdentifier>{2439ef51-6d4a-4946-ab92-c0e8ec0800e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="thirdParty\equalizer">
+      <UniqueIdentifier>{aa328501-5461-4f5f-8985-154f1c9be62b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="equalizerWidget">
+      <UniqueIdentifier>{59cc0d77-cac2-4f02-aa74-d89998f65e63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GeneratedFiles\qrc_myclass.cpp">
@@ -198,15 +204,6 @@
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_lrcsettingspage.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="app\configPanel\proxysettingspage.cpp">
-      <Filter>configPanel</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_proxysettingspage.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_proxysettingspage.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="app\configPanel\UpdatePage.cpp">
@@ -464,6 +461,24 @@
     <ClCompile Include="app\engine\SoundControl.cpp">
       <Filter>engine</Filter>
     </ClCompile>
+    <ClCompile Include="app\thirdParty\equalizer\eq.cpp">
+      <Filter>thirdParty\equalizer</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thirdParty\equalizer\iir_cfs.cpp">
+      <Filter>thirdParty\equalizer</Filter>
+    </ClCompile>
+    <ClCompile Include="app\thirdParty\equalizer\iir_fpu.cpp">
+      <Filter>thirdParty\equalizer</Filter>
+    </ClCompile>
+    <ClCompile Include="app\equalizerWidget\EqualizerWidget.cpp">
+      <Filter>equalizerWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EqualizerWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EqualizerWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="myclass.qrc">
@@ -500,9 +515,6 @@
       <Filter>configPanel</Filter>
     </CustomBuild>
     <CustomBuild Include="app\configPanel\lrcsettingspage.h">
-      <Filter>configPanel</Filter>
-    </CustomBuild>
-    <CustomBuild Include="app\configPanel\proxysettingspage.h">
       <Filter>configPanel</Filter>
     </CustomBuild>
     <CustomBuild Include="app\configPanel\UpdatePage.h">
@@ -583,6 +595,9 @@
     <CustomBuild Include="app\core\nofocusdelegate.h">
       <Filter>core</Filter>
     </CustomBuild>
+    <CustomBuild Include="app\equalizerWidget\EqualizerWidget.h">
+      <Filter>equalizerWidget</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app\engine\AudioStream.h">
@@ -653,6 +668,18 @@
     </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="app\thirdParty\equalizer\eq.h">
+      <Filter>thirdParty\equalizer</Filter>
+    </ClInclude>
+    <ClInclude Include="app\thirdParty\equalizer\iir.h">
+      <Filter>thirdParty\equalizer</Filter>
+    </ClInclude>
+    <ClInclude Include="app\thirdParty\equalizer\iir_cfs.h">
+      <Filter>thirdParty\equalizer</Filter>
+    </ClInclude>
+    <ClInclude Include="app\thirdParty\equalizer\iir_fpu.h">
+      <Filter>thirdParty\equalizer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

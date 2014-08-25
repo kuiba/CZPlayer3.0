@@ -4,6 +4,7 @@
 #include <QtCore>
 #include <QtGui>
 
+//ÏÂÔØÉèÖÃÒ³Ãæ
 class DownloadSettingsPage : public QWidget
 {
     Q_OBJECT

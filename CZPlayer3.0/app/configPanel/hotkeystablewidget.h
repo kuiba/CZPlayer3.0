@@ -3,6 +3,7 @@
 
 #include "head.h"
 
+//ÈÈ¼üÒ³Ãæ
 class HotKeysTableWidget : public QTableWidget
 {
     Q_OBJECT

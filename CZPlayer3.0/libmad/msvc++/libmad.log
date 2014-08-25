@@ -1,4 +1,4 @@
-﻿生成启动时间为 2014/7/28 22:03:55。
+﻿生成启动时间为 2014/8/25 16:28:24。
      1>项目“D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libmad\msvc++\libmad.vcxproj”在节点 3 上(rebuild 个目标)。
      1>_PrepareForClean:
          正在删除文件“./libmad.lastbuildstate”。
@@ -6,31 +6,31 @@
        InitializeBuildStatus:
          正在创建“./libmad.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\CL.exe /c /I. /ZI /nologo /W1 /WX- /Od /Oy- /D FPM_DEFAULT /D _LIB /D HAVE_CONFIG_H /D ASO_ZEROCHECK /D WIN32 /D _DEBUG /D DEBUG /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\bit.c ..\decoder.c ..\fixed.c ..\frame.c ..\huffman.c ..\layer12.c ..\layer3.c ..\stream.c ..\synth.c ..\timer.c ..\version.c
-         version.c
-         timer.c
-         synth.c
-         stream.c
-         layer3.c
-         layer12.c
-         huffman.c
-         frame.c
-         fixed.c
-         decoder.c
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\CL.exe /c /I. /Zi /nologo /W1 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D FPM_INTEL /D WIN32 /D _LIB /D HAVE_CONFIG_H /D ASO_ZEROCHECK /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\bit.c ..\decoder.c ..\fixed.c ..\frame.c ..\huffman.c ..\layer12.c ..\layer3.c ..\stream.c ..\synth.c ..\timer.c ..\version.c
          bit.c
+         decoder.c
+         fixed.c
+         frame.c
+         huffman.c
+         layer12.c
+         layer3.c
+         stream.c
+         synth.c
+         timer.c
+         version.c
          正在生成代码...
        Lib:
-         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\Lib.exe /OUT:"../../decodinglib\\libmad.lib" /NOLOGO .\Debug/bit.obj
-         .\Debug/decoder.obj
-         .\Debug/fixed.obj
-         .\Debug/frame.obj
-         .\Debug/huffman.obj
-         .\Debug/layer12.obj
-         .\Debug/layer3.obj
-         .\Debug/stream.obj
-         .\Debug/synth.obj
-         .\Debug/timer.obj
-         .\Debug/version.obj
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\Lib.exe /OUT:"../../decodinglib\libmad.lib" /NOLOGO .\Release/bit.obj
+         .\Release/decoder.obj
+         .\Release/fixed.obj
+         .\Release/frame.obj
+         .\Release/huffman.obj
+         .\Release/layer12.obj
+         .\Release/layer3.obj
+         .\Release/stream.obj
+         .\Release/synth.obj
+         .\Release/timer.obj
+         .\Release/version.obj
          libmad.vcxproj -> D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libmad\msvc++\../../decodinglib\libmad.lib
        FinalizeBuildStatus:
          正在删除文件“./libmad.unsuccessfulbuild”。
@@ -39,4 +39,4 @@
 
 生成成功。
 
-已用时间 00:00:02.60
+已用时间 00:00:10.19

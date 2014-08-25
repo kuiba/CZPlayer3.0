@@ -12,6 +12,7 @@
 #include "LoadMusicThread.h"
 #include "minmusicwidget.h"
 #include "musiclistwidget.h"
+#include "EqualizerWidget.h"
 #include "configdialog.h"
 #include "SharedDialog.h"
 #include "AboutPanel.h"
@@ -150,8 +151,8 @@ private:
 	MusicList *playList;									//播放列表
 	MusicListWidget *musicListWidget;
 	MusicLrc *lrc;											//歌词
-	//MusicDownload *musicDownload;							//歌曲下载
 	SearchPanel *searchPanel;								//歌曲搜索面板
+	EqualizerWidget *equalizerWidget;						//均衡器界面
 	ConfigDialog *configDialog;								//设置界面
 	SharedDialog *sharedDialog;								//分享界面
 	AboutPanel *aboutPanel;									//关于CZPlayer

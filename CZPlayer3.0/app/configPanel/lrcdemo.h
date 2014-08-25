@@ -3,6 +3,7 @@
 
 #include "head.h"
 
+//¸è´ÊÄ£°å
 class LrcDemo : public QLabel
 {
     Q_OBJECT

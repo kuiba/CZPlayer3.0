@@ -56,10 +56,17 @@ void CPlayThread::Execute()
 	const DWORD buffersize = 16000;
 
 	// wait time = 1/4 of buffer time
-	DWORD waitTime = (DWORD)((m_Player->m_BufferSize*1000.0F)/(m_Player->m_SampleRate*m_Player->m_FrameSize));
+	DWORD waitTime = (DWORD)((m_Player->m_BufferSize * 1000.0F) / (m_Player->m_SampleRate * m_Player->m_FrameSize));
 	waitTime = (DWORD)(waitTime / 4);
-	if(waitTime<10) waitTime = 1;
-	if(waitTime>1000) waitTime = 1000;
+
+	if (waitTime < 10) 
+	{
+		waitTime = 1;
+	}
+	if (waitTime > 1000)
+	{
+		waitTime = 1000;
+	}
 
 	CSpectrumAnalyser* pSpectrum = m_Player->m_SpectrumAnalyser;
 	CFileInput* pInput = m_Player->m_Input;
@@ -92,7 +99,10 @@ void CPlayThread::Execute()
 			{
 				m_CriticalSection->Enter();
 				int thisWritten = DAUDIO_Write((void*)m_Player->m_info, buffer+offset, len);	//将缓冲区的数据写入DirectSound进行播放
-				if(thisWritten < 0) break;
+				if(thisWritten < 0)
+				{
+					break;
+				}
 				m_Player->m_bytePosition += thisWritten;
 				m_CriticalSection->Leave();
 
@@ -503,7 +513,6 @@ CBasicPlayer::CBasicPlayer(TCHAR *pszFileName) : m_PlayThread(NULL),
 		musicFormat = CBasicPlayer::ogg;
 	}
 
-
 	//根据不同的音乐格式建立相应的音乐文件读取类
 	if (musicFormat == CBasicPlayer::wma)
 	{
@@ -548,7 +557,7 @@ void CBasicPlayer::slot_spectrumChanged(vector<float> vecFrequency)
 	c_emit sig_spectrumChanged(vecFrequency);
 }
 
-//频谱改变
+//播放完成
 void CBasicPlayer::slot_Finished()
 {
 	c_emit sig_Finished();
@@ -615,7 +624,6 @@ void CBasicPlayer::Play()
 
 jlong CBasicPlayer::GetLongFramePosition()
 {
-	//m_CriticalSection->Enter();
 	jlong pos = DAUDIO_GetBytePosition((void*)m_info, true, m_bytePosition);
 	if(pos < 0) pos = 0;
 	return (jlong)(pos / DEFAULT_FRAME_SIZE);

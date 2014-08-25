@@ -5,7 +5,7 @@ UpdatePage::UpdatePage(QWidget *parent) : m_parent(parent)
 	QGroupBox *updateGB = new QGroupBox(tr("软件更新"), this);
 
 	updateLabel = new QLabel(this);
-	updateLabel->setText(tr("您现在使用的版本是V2.0 更新时间:2014年07月18日"));
+	updateLabel->setText(tr("您现在使用的版本是V3.0 更新时间:2014年07月18日"));
 
 	updateButton = new QPushButton(this);
 	updateButton->setText(tr("手动检查最新版本"));

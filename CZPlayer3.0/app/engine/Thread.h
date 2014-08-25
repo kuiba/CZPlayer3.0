@@ -19,7 +19,9 @@ private:
 	{
 		CThread* pThread = (CThread*)lpParameter;
 		if(pThread == NULL)
+		{
 			return 0;
+		}
 
 		pThread->Execute();
 		return 0;

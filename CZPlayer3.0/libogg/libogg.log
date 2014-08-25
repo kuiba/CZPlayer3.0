@@ -1,4 +1,4 @@
-﻿生成启动时间为 2014/7/28 22:03:55。
+﻿生成启动时间为 2014/8/25 16:28:23。
      1>项目“D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libogg\libogg.vcxproj”在节点 2 上(rebuild 个目标)。
      1>_PrepareForClean:
          正在删除文件“./libogg.lastbuildstate”。
@@ -6,12 +6,11 @@
        InitializeBuildStatus:
          正在创建“./libogg.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\CL.exe /c /I. /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LIBOGG_EXPORTS /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"./" /Fd"./vc100.pdb" /Gd /TC /analyze- /errorReport:prompt bitwise.c framing.c
-         framing.c
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\CL.exe /c /I. /Zi /nologo /W4 /WX- /Ox /Ob2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D LIBOGG_EXPORTS /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"./" /Fd"./vc100.pdb" /Gd /TC /wd4244 /analyze- /errorReport:prompt bitwise.c framing.c
          bitwise.c
-         正在生成代码...
+         framing.c
        Lib:
-         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\Lib.exe /OUT:"../decodinglib\\libogg.lib" /NOLOGO ./bitwise.obj
+         F:\Microsoft Visual Studio 10.0\vs2010\VC\bin\Lib.exe /OUT:"../decodinglib\libogg.lib" /NOLOGO /LTCG ./bitwise.obj
          ./framing.obj
          libogg.vcxproj -> D:\visual studio 2010 Projects\CZPlayer3.0\CZPlayer3.0\libogg\../decodinglib\libogg.lib
        FinalizeBuildStatus:
@@ -21,4 +20,4 @@
 
 生成成功。
 
-已用时间 00:00:01.76
+已用时间 00:00:09.17

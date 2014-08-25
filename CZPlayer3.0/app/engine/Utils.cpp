@@ -736,7 +736,12 @@ void* DS_createSoundBuffer(DS_Info* info,
 	{
 		memset(&dsbdesc, 0, sizeof(DSBUFFERDESC));								//清零
 		dsbdesc.dwSize = sizeof(DSBUFFERDESC);									//结构大小
-		dsbdesc.dwFlags = DSBCAPS_GETCURRENTPOSITION2 | DSBCAPS_GLOBALFOCUS;	//缓冲区性能标志常量：获取当前位置2、有全局焦点的缓冲区
+		//缓冲区性能标志常量
+		dsbdesc.dwFlags = DSBCAPS_GETCURRENTPOSITION2	//获取当前位置2
+			| DSBCAPS_GLOBALFOCUS						//有全局焦点的缓冲区
+			| DSBCAPS_CTRLPAN							//声音可以从左声道移动到右声道
+			| DSBCAPS_CTRLVOLUME						//可以改变音量大小
+			| DSBCAPS_CTRLPOSITIONNOTIFY;				//可以在缓冲区设置通知的位置
 		dsbdesc.dwBufferBytes = info->dsBufferSizeInBytes;
 		dsbdesc.lpwfxFormat = (WAVEFORMATEX*) &format;							//设置缓冲区格式
 		res = DEV_PLAY(info->deviceID)->CreateSoundBuffer(&dsbdesc, (LPDIRECTSOUNDBUFFER*) &buffer, NULL);	//创建辅助缓冲区
@@ -759,12 +764,15 @@ void* DS_createSoundBuffer(DS_Info* info,
 	return buffer;
 }
 
-void DS_destroySoundBuffer(DS_Info* info) {
-	if (info->playBuffer != NULL) {
+void DS_destroySoundBuffer(DS_Info* info)
+{
+	if (info->playBuffer != NULL) 
+	{
 		info->playBuffer->Release();
 		info->playBuffer = NULL;
 	}
-	if (info->captureBuffer != NULL) {
+	if (info->captureBuffer != NULL)
+	{
 		info->captureBuffer->Release();
 		info->captureBuffer = NULL;
 	}

@@ -3,6 +3,7 @@
 #include <QtCore>
 #include <QtGui>
 
+//软件更新页面
 class UpdatePage : public QWidget
 {
 	Q_OBJECT

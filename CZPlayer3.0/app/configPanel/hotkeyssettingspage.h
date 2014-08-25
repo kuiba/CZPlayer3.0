@@ -5,6 +5,7 @@
 #include <QtGui>
 #include "hotkeystablewidget.h"
 
+//ÈÈ¼üÉèÖÃÒ³Ãæ
 class HotKeysSettingsPage : public QWidget
 {
     Q_OBJECT

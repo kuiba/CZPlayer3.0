@@ -4,6 +4,7 @@
 #include "downloadlist.h"
 #include "head.h"
 
+//ÏÂÔØ¸èÇúÏß³Ì
 class DownloadThread : public QThread
 {
     Q_OBJECT

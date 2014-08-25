@@ -431,7 +431,7 @@ typedef struct _ID3v2Frame
 } ID3v2Frame;
 
 int parse_xing(struct xing *xing, struct mad_bitptr ptr, unsigned int bitlen);
-int scan_header(CStream* pStream, struct mad_header *header, struct xing *xing);
+int scan_header(CStream* pStream, struct mad_header *header, struct xing *xing);							//读取mp3头信息
 void pack_pcm(unsigned char **pcm, unsigned int nsamples, mad_fixed_t const *ch1, mad_fixed_t const *ch2);
 
 class CMp3Input : public CFileInput
@@ -457,7 +457,7 @@ private:
 	struct mad_frame m_frame;
 	struct mad_synth m_synth;
 	struct xing m_xing;
-	bool m_vbr;
+	bool m_vbr;				//cbr:常量位速率，vbr:可变位速率
 
 	unsigned char m_buffer[40000];
 	unsigned int m_buflen;

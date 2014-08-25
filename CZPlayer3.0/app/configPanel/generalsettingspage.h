@@ -4,6 +4,7 @@
 #include <QtCore>
 #include <QtGui>
 
+//“ª∞„…Ë÷√“≥√Ê
 class GeneralSettingsPage : public QWidget
 {
     Q_OBJECT

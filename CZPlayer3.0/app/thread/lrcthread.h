@@ -3,6 +3,7 @@
 
 #include "head.h"
 
+//∏Ë¥ œ‘ æœﬂ≥Ã
 class LrcThread : public QThread
 {
     Q_OBJECT

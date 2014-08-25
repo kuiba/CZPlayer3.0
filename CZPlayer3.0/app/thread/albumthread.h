@@ -3,6 +3,7 @@
 
 #include "head.h"
 
+//下载专辑线程
 class AlbumThread : public QThread
 {
 	Q_OBJECT
@@ -17,12 +18,12 @@ protected:
 signals:
 	void sig_AlbumDownloadFinished(QString strMusicName, QString strAlbumUrl);	//专辑下载完成信号
 
-	private slots:
-		void slot_GetMusicAlbumJson(QNetworkReply *replay);
-		void slot_GetMusicAlbumJson2(QNetworkReply *replay);
-		void slot_GetAlbum();
-		void slot_ReplayFinished();
-		void slot_ReplyError(QNetworkReply::NetworkError networkError);//下载错误
+private slots:
+	void slot_GetMusicAlbumJson(QNetworkReply *replay);
+	void slot_GetMusicAlbumJson2(QNetworkReply *replay);
+	void slot_GetAlbum();
+	void slot_ReplayFinished();
+	void slot_ReplyError(QNetworkReply::NetworkError networkError);//下载错误
 
 private:
 	void getAlbumFromURL(const QUrl &url, const QString &filePath);

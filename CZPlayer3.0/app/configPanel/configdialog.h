@@ -7,9 +7,9 @@
 #include "downloadsettingspage.h"
 #include "lrcsettingspage.h"
 #include "hotkeyssettingspage.h"
-//#include "proxysettingspage.h"
 #include "UpdatePage.h"
 
+//≈‰÷√∂‘ª∞øÚ
 class ConfigDialog : public QDialog
 {
     Q_OBJECT

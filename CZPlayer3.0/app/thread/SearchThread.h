@@ -2,6 +2,7 @@
 
 #include "head.h"
 
+//ËÑË÷¸èÇúÏß³Ì
 class SearchThread  : public QThread
 {
 	Q_OBJECT
