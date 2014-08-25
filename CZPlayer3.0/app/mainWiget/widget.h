@@ -157,7 +157,7 @@ private:
 	SharedDialog *sharedDialog;								//分享界面
 	AboutPanel *aboutPanel;									//关于CZPlayer
 	GlobalHotKey *globalHotKey;								//全局热键
-	HotplugWatcherThread *hotpugWatcherThread;				//设备监听
+	//HotplugWatcherThread *hotpugWatcherThread;				//设备监听
 
 	QMap<qint64, QString> lrcMap;
 	map<QString, int> m_mapMusicRows;						//key：歌曲名，value：行号

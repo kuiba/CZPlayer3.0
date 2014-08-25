@@ -140,7 +140,7 @@ Widget::~Widget()
 	if (minMusicWidget) { delete minMusicWidget; minMusicWidget = 0; }
 
 	//terminate:终止线程
-	if (hotpugWatcherThread->isRunning()) { hotpugWatcherThread->terminate(); delete hotpugWatcherThread; hotpugWatcherThread = 0;}
+	//if (hotpugWatcherThread->isRunning()) { hotpugWatcherThread->terminate(); delete hotpugWatcherThread; hotpugWatcherThread = 0;}
 }
 
 //创建界面
@@ -408,7 +408,7 @@ void Widget::createUI()
 	ClientBaseOperating::initHotKeyPropery();
 
 	//开启设备监听线程
-	hotpugWatcherThread = new HotplugWatcherThread;
+	//hotpugWatcherThread = new HotplugWatcherThread;
 	//hotpugWatcherThread->start();//在线程内部已经start
 
 	//设置一个定时器
